@@ -4,11 +4,11 @@ function validate()
     var name = document.getElementById("userName").value;
     var phone = document.getElementById("contactInput").value;
 
-    //2. calculate length of contact number and store i a variable named  "digitCount"
+    //2. calculate length of contact number and store i a variable named "count"
     var count= phone.length;
     console.log(count);
     
-    //3. if name input is blank, display the 'errorName' span, else hide it
+    //3. if name input is blank, display the 'err1' element, else hide it
     if(name == ''){
         document.getElementById('err1').style.display="block";
     }
@@ -16,7 +16,7 @@ function validate()
         document.getElementById('err1').style.display="none";
     }
 
-    //4. if Count is not equal to 10, display the 'errorContact' span, else hide it
+    //4. if Count is not equal to 10, display the 'err2' element, else hide it
     if(count != 10){
         document.getElementById('err2').style.display="block";
     }
